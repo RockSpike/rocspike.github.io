@@ -146,7 +146,7 @@
 <meta property="og:image" content="http://wx1.sinaimg.cn/large/afe83e7egy1g3718e6z2xj20qg0fqk2u.jpg">
 <meta property="og:image" content="http://wx3.sinaimg.cn/large/afe83e7egy1g38xwithvtj20sm03egoe.jpg">
 <meta property="og:image" content="http://wx2.sinaimg.cn/large/afe83e7egy1g38xwjw26ij21400p01ke.jpg">
-<meta property="og:updated_time" content="2019-05-21T06:54:05.447Z">
+<meta property="og:updated_time" content="2019-06-04T02:29:16.375Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="通过GitHub Pages + Hexo框架 + nexT主题构建博客">
 <meta name="twitter:description" content="之所以通过使用 “GitHub Pages + Hexo框架 + nexT主题” 这一方案，是因为GitHub Pages的易用性、Hexo框架的轻量化和nexT主题广为人用，明显减少了我搭建的初期成本，而且后期更改的上限非常高，利于更高层次的折腾。">
@@ -451,7 +451,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-05-21 14:54:05" itemprop="dateModified" datetime="2019-05-21T14:54:05+08:00">2019-05-21</time>
+                <time title="修改时间：2019-06-04 10:29:16" itemprop="dateModified" datetime="2019-06-04T10:29:16+08:00">2019-06-04</time>
               
             
           </span>
@@ -519,11 +519,17 @@
 <h5 id="启动博客本地服务器"><a href="#启动博客本地服务器" class="headerlink" title="启动博客本地服务器"></a>启动博客本地服务器</h5><p>到了Hexo 3.0及以后的版本，Hexo把服务器独立为个别模块，所以需要安装Hexo-server才可以使用。安装指令为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-server --save</span><br></pre></td></tr></table></figure></p>
 <p>Hexo本地服务器的端口号为4000，如果想更改端口号，则通过使用<code>$ hexo server -p xxxx</code> 进行更改。</p>
 <p>完成上诉操作，就可以在终端中输入<code>$ hexo s</code>语句实现博客本地服务器的开启，出现如下输出即为开启成功.<br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="http://wx3.sinaimg.cn/large/afe83e7egy1g38xwithvtj20sm03egoe.jpg" class="full-image" alt="开启本地服务" title="开启本地服务" style="max-width: none; width:75%;"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span></p>
-<p>之后在浏览器输入loac<code>localhost:4000</code>即可进入已经搭建好的本地服务器博客网站。</p>
+<p>之后在浏览器输入<code>localhost:4000</code>即可进入已经搭建好的本地服务器博客网站。</p>
 <p>本地服务器开启后会自动监视本地文件的变动，也是说可以在开启本地服务器的同时，可以对本地博文进行改动。只要对文件进行保存，刷新一遍本地服务器的页面，相应的改动也会出现，也就避免了需要频繁进行服务器的开启或关闭的尴尬操作。</p>
 <h5 id="博客页面的生成和上传"><a href="#博客页面的生成和上传" class="headerlink" title="博客页面的生成和上传"></a>博客页面的生成和上传</h5><p>在生成部署之前需要对站点文件下的<code>_config.yml</code>进行修改，将文件的最底端的deploy部署配置参数改为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https://github.com/username/username.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
 <p>修改并保存后，在终端页面先后输入<code>$ hexo g</code>和<code>$ hexo d</code>两个指令或，输入<code>$ hexo d -g</code>指令即可完成页面的的生成和上传部署。<br><span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="http://wx2.sinaimg.cn/large/afe83e7egy1g38xwjw26ij21400p01ke.jpg" class="full-image" alt="部署" title="部署" style="max-width: none; width:75%;"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span></p>
-<h5 id="nexT主题的配置"><a href="#nexT主题的配置" class="headerlink" title="nexT主题的配置"></a>nexT主题的配置</h5><h4 id="nexT主题配置细节"><a href="#nexT主题配置细节" class="headerlink" title="nexT主题配置细节"></a>nexT主题配置细节</h4>
+<h5 id="NexT主题的配置"><a href="#NexT主题的配置" class="headerlink" title="NexT主题的配置"></a>NexT主题的配置</h5><p>在完成之前的所需要安装的前置环境后，来到当前站点文件夹下。通过以下命令进行NexT主题的下载。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https://github.com/theme-next/hexo-theme-next themes / next</span><br></pre></td></tr></table></figure></p>
+<p>以上语句只提供基础版本的安装，即安装的是NexT 6.0主题，但所下载的包里包含了目前所有版本，可以通过<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout tags / v6.0.1</span><br></pre></td></tr></table></figure></p>
+<p>切换指定版本，也可以通过以下命令更新到最新版本。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd themes / next </span><br><span class="line">$ git pull</span><br></pre></td></tr></table></figure></p>
+<p>安装完毕后，当前目录英文版应为站点文件夹，所以打开<code>_config.yml</code>，修改其中的字段<code>theme: next</code>。便将主题配置完毕，此时打开本地服务器网站可以看得到变化，但是要在Github Pages上产生变化需要进行相应的生成和上传。</p>
+<h4 id="NexT主题配置细节"><a href="#NexT主题配置细节" class="headerlink" title="NexT主题配置细节"></a>NexT主题配置细节</h4><p>NexT的配置主要是对themes/next文件夹下的<code>_config.yml</code>文件进行修改。</p>
+<h5 id="侧栏样式的修改"><a href="#侧栏样式的修改" class="headerlink" title="侧栏样式的修改"></a>侧栏样式的修改</h5><p>position left：左放置 right：右放置 </p>
+
       
     </div>
 
@@ -562,6 +568,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/08/05/buildAndroidProject/" rel="prev" title="构建Android项目">
+                构建Android项目 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -632,7 +642,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -653,7 +663,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -733,7 +745,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#GitHub-Pages的配置"><span class="nav-number">1.</span> <span class="nav-text">GitHub Pages的配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hexo框架-nexT主题的配置（Mac）"><span class="nav-number">2.</span> <span class="nav-text">Hexo框架 + nexT主题的配置（Mac）</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#安装"><span class="nav-number">2.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#建站"><span class="nav-number">2.2.</span> <span class="nav-text">建站</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#启动博客本地服务器"><span class="nav-number">2.3.</span> <span class="nav-text">启动博客本地服务器</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#博客页面的生成和上传"><span class="nav-number">2.4.</span> <span class="nav-text">博客页面的生成和上传</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#nexT主题的配置"><span class="nav-number">2.5.</span> <span class="nav-text">nexT主题的配置</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#nexT主题配置细节"><span class="nav-number">3.</span> <span class="nav-text">nexT主题配置细节</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#GitHub-Pages的配置"><span class="nav-number">1.</span> <span class="nav-text">GitHub Pages的配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hexo框架-nexT主题的配置（Mac）"><span class="nav-number">2.</span> <span class="nav-text">Hexo框架 + nexT主题的配置（Mac）</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#安装"><span class="nav-number">2.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#建站"><span class="nav-number">2.2.</span> <span class="nav-text">建站</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#启动博客本地服务器"><span class="nav-number">2.3.</span> <span class="nav-text">启动博客本地服务器</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#博客页面的生成和上传"><span class="nav-number">2.4.</span> <span class="nav-text">博客页面的生成和上传</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#NexT主题的配置"><span class="nav-number">2.5.</span> <span class="nav-text">NexT主题的配置</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#NexT主题配置细节"><span class="nav-number">3.</span> <span class="nav-text">NexT主题配置细节</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#侧栏样式的修改"><span class="nav-number">3.1.</span> <span class="nav-text">侧栏样式的修改</span></a></li></ol></li></ol></div>
             
 
           </div>
